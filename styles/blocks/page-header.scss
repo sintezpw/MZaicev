@@ -68,9 +68,80 @@
                 background-repeat: no-repeat;
                 z-index: 2;	
             }    
-        }  
-        &--bookmarks {
+        } 
 
+        &--bookmarks {
+            width: 150px;
+            height: 42px;
+            font-size: 23px;
+            font-family: "cuprum";
+            text-align: center;
+            float: left;
+
+            &:hover {
+                background-color: #212a3a;
+            }
+            &:active {
+                background-color: #161d29;
+            }
+
+            &.bkm {
+                float: left;
+                position: relative;
+                top: 12px;
+                left: 10px;
+                width: 14px;
+                height: 16px;
+                background-image: url("../img/icon-bookmark.png");	
+                background-repeat: no-repeat;
+                
+                &:hover {
+                    background-image: url("../img/icon-bookmark white.png");	
+                    background-repeat: no-repeat;
+                }
+                &:active {
+                    background-color: #161d29;
+                    background-image: url("../img/icon-bookmark.png");	
+                    background-repeat: no-repeat;
+                }
+            }            
         }
+        &--basket {
+            width: 150px;
+            height: 42px;
+            font-size: 23px;
+            font-family: "cuprum";
+            text-align: center;
+            float: left;
+
+            &:hover {
+                background-color: #212a3a;
+            }
+            &:active {
+                background-color: #161d29;
+            }
+
+            & .bsk {
+                float: left;
+                position: relative;
+                top: 12px;
+                left: 10px;
+                width: 17px;
+                height: 16px;
+                background-image: url("../img/icon-basket.png");	
+                background-repeat: no-repeat;
+
+                &:hover {
+                    background-color: #212a3a;
+                    background-image: url("../img/icon-basket white.png");	
+                    background-repeat: no-repeat;
+                }
+                &:active {
+                    background-color: #161d29;		
+                    background-image: url("../img/icon-basket.png");	
+                    background-repeat: no-repeat;
+                }
+            }
+        }        
     }
 }    
