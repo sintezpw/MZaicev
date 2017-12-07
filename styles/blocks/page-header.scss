@@ -1,5 +1,27 @@
 .page-header{
-    width: 1200px;
-    height: 320px;
-    background-color: $header;
+    
+    &__top{
+        width: 1200px;
+        height: 320px;
+        background-color: $header;
+        &--logo {
+            width: 220px;
+            height: 42px;
+            float: left;
+            background-color: #ee3643;
+            border-bottom: 5px solid #b52933;
+            text-transform: uppercase;
+            text-align: center;
+            line-height: 1.9em;
+            font-family: "cuprum";
+            font-size: 24px;
+            color: 	#f1f2f4;
+            &:hover {
+                background-color: #ca2c37;
+            }
+            &:active {
+                background-color: #ba2732;
+            }     
+        }
+    }
 }    
