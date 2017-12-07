@@ -1,6 +1,6 @@
-.page-header{
+.page-header {
     
-    &__top{
+    &__top {
         width: 1200px;
         height: 320px;
         background-color: $header;
@@ -22,6 +22,55 @@
             &:active {
                 background-color: #ba2732;
             }     
+        }
+        &--search {
+            position: relative;
+            top: 13px;
+            left: 10px;
+            float: left;	
+            width: 17px;
+            height: 17px;           
+            z-index: 1;
+
+            & input[placeholder] {
+                position: relative;
+                top: -17px;
+                width: 270px;
+                height: 42px;
+                padding-left: 35px;
+                padding-right: 20px;	
+                background-color: #35425c;
+                font-size: 23px;
+                font-family: "cuprum";		
+                border: none;
+                outline: none;
+                background-image: url("../img/icon-search.png");
+                background-position: 10px 13px;
+                background-repeat: no-repeat;
+            }
+            & input[placeholder]:hover {
+                background-color: #263041;
+            }
+            & input::-webkit-input-placeholder {color:#f0f1f2;}
+            & input:focus::-webkit-input-placeholder {color: gray}
+            & input::-moz-placeholder          {color:#f0f1f2;}
+            & input:-moz-placeholder           {color:#f0f1f2;}
+            & input:-ms-input-placeholder      {color:#f0f1f2;}      
+            & input[placeholder]:hover {
+                background-image: url("../img/icon-search white.png");
+                background-position: 10px 13px;
+                background-repeat: no-repeat;
+            }
+            & input[placeholder]:focus {
+                background-color: #ffffff;	
+                background-image: url("../img/icon-search red.png");
+                background-position: 10px 13px;
+                background-repeat: no-repeat;
+                z-index: 2;	
+            }    
+        }  
+        &--bookmarks {
+
         }
     }
 }    
