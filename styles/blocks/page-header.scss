@@ -1,9 +1,14 @@
 .page-header {
-    
-    &__top {
-        width: 1200px;
-        height: 320px;
-        background-color: $header;
+    width: 1200px;
+    height: 320px;
+    background-color: $header;
+
+    &__top {        
+        width: 1070px;
+        height: 42px;
+        padding-left: 130px;
+        margin-bottom: 0px;
+        background-color: #32425c;
         &--logo {
             width: 220px;
             height: 42px;
