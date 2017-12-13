@@ -32,7 +32,7 @@ gulp.task("style", function () {
 
 gulp.task("normalize", function () {
   gulp.src("styles/normalize.scss")
-    .pipe(less())
+    .pipe(scss())
     .pipe(postcss([
       autoprefixer()
     ]))
